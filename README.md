@@ -15,7 +15,7 @@
   </p>
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/Bartolumiu/TR25-Utilities?color=dark-green) ![Issues](https://img.shields.io/github/issues/Bartolumiu/TR25-Utilities) ![License](https://img.shields.io/github/license/Bartolumiu/TR25-Utilities) [![CodeFactor](https://www.codefactor.io/repository/github/bartolumiu/tr25-utilities/badge/dev)](https://www.codefactor.io/repository/github/bartolumiu/tr25-utilities/overview/dev)
+![Contributors](https://img.shields.io/github/contributors/Bartolumiu/TR25-Utilities?color=dark-green) ![Issues](https://img.shields.io/github/issues/Bartolumiu/TR25-Utilities) ![License](https://img.shields.io/github/license/Bartolumiu/TR25-Utilities) [![CodeFactor](https://www.codefactor.io/repository/github/bartolumiu/tr25-utilities/badge/main)](https://www.codefactor.io/repository/github/bartolumiu/tr25-utilities/overview/main)
 
 ## Table Of Contents
 
