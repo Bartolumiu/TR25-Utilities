@@ -1,0 +1,32 @@
+{
+  "name": "tr25-utilities",
+  "version": "0.0.1",
+  "description": "Utilities bot made with Discord.JS and Node.JS",
+  "main": "src/bot.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bartolumiu/TR25-Utilities.git"
+  },
+  "keywords": [
+    "discordjs",
+    "nodejs",
+    "bot",
+    "discord"
+  ],
+  "author": "Bartolumiu",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Bartolumiu/TR25-Utilities/issues"
+  },
+  "homepage": "https://github.com/Bartolumiu/TR25-Utilities#readme",
+  "dependencies": {
+    "@discordjs/rest": "^2.2.0",
+    "discord-api-types": "^0.37.66",
+    "discord.js": "^14.15.0-dev.1702598980-18c2dccd0",
+    "dotenv": "^16.3.1",
+    "mongoose": "^8.0.3"
+  }
+}
