@@ -15,11 +15,11 @@ module.exports = {
         
         /* Check if the bot is already setup */
         let guildProfile = await Guild.findOne({ guildId: interaction.guild.id });
-        if (guildProfile) return interaction.reply({ content: `This server is already setup! Setup done on: <t:${guildProfile.setupDate}:F>`, ephemeral: true });
+        if (guildProfile) return interaction.editReply({ content: `This server is already setup! Setup done on: \`${guildProfile.setupDate}\``, ephemeral: true });
 
         /* Create a new guild profile */
         guildProfile = new Guild({
-            _id: mongoose.Types.ObjectId(),
+            _id: new mongoose.Types.ObjectId,
             guildId: interaction.guild.id,
             guildName: interaction.guild.name,
             userVerification: {
@@ -59,9 +59,9 @@ module.exports = {
         /* Send setup embed */
         const setupEmbed = new EmbedBuilder()
             .setTitle('Setup done!')
-            .setColor('GREEN')
+            .setColor('Green')
             .setDescription(`The bot has been successfully setup for this server!
-            \nSetup done on: <t:${guildProfile.setupDate}:F>`)
+            \nSetup done on: ${guildProfile.setupDate}`)
             .addFields(
                 {
                     name: 'User Verification',
@@ -80,13 +80,13 @@ module.exports = {
                 },
                 {
                     name: 'Setup Date',
-                    value: `<t:${guildProfile.setupDate}:F>`,
+                    value: `${guildProfile.setupDate}`,
                     inline: true
                 },
             )
             .setTimestamp();
 
         /* Send setup embed */
-        interaction.editReply({ embeds: [setupEmbed], ephemeral: true });
+        interaction.editReply({ content: 'Saved successfully!', embeds: [setupEmbed], ephemeral: true });
     }
 }
